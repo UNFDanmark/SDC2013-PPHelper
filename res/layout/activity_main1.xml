@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pandphelpurr"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/titleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/CCMain"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/supTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleMain"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/Subtitle"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <ProgressBar
+        android:id="@+id/streg"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/supTitleMain" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nameTitle"
+        android:layout_alignBottom="@+id/nameTitle"
+        android:layout_toRightOf="@+id/nameTitle"
+        android:ems="10"
+        android:hint="@string/whatname"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/spinnerRace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/gearTitle"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/nameTitle"
+        android:entries="@array/Races" />
+
+    <TextView
+        android:id="@+id/raceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameTitle"
+        android:layout_alignTop="@+id/spinnerRace"
+        android:gravity="right|center"
+        android:text="@string/race"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/classesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/raceTitle"
+        android:layout_below="@+id/spinnerRace"
+        android:gravity="right|center"
+        android:text="@string/ClassChoose"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerClasses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerRace"
+        android:layout_alignRight="@+id/spinnerRace"
+        android:layout_alignTop="@+id/classesTitle"
+        android:entries="@array/Classes" />
+
+    <TextView
+        android:id="@+id/languageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classesTitle"
+        android:layout_centerVertical="true"
+        android:gravity="right|center"
+        android:text="@string/language"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/gearTitle"
+        android:layout_alignTop="@+id/languageTitle"
+        android:layout_toRightOf="@+id/languageTitle"
+        android:entries="@array/Language" />
+
+    <Spinner
+        android:id="@+id/spinnerAlignment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/spinnerLanguage"
+        android:layout_alignTop="@+id/alignmentTitle"
+        android:layout_toRightOf="@+id/alignmentTitle"
+        android:entries="@array/Alignment" />
+
+    <TextView
+        android:id="@+id/skillsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/classesTitle"
+        android:layout_below="@+id/spinnerAlignment"
+        android:gravity="right|center"
+        android:text="@string/skills"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerSkills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/spinnerAlignment"
+        android:layout_alignTop="@+id/skillsTitle"
+        android:layout_toRightOf="@+id/skillsTitle"
+        android:entries="@array/Skills" />
+
+    <EditText
+        android:id="@+id/skillRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/skillsTitle"
+        android:layout_alignBottom="@+id/skillsTitle"
+        android:layout_toRightOf="@+id/spinnerSkills"
+        android:ems="10"
+        android:inputType="numberSigned" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/weaponTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/alignmentTitle"
+        android:layout_below="@+id/spinnerSkills"
+        android:gravity="right|center"
+        android:text="@string/weapon"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerWeapon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/spinnerSkills"
+        android:layout_alignTop="@+id/weaponTitle"
+        android:layout_toRightOf="@+id/weaponTitle"
+        android:entries="@array/Gear" />
+
+    <TextView
+        android:id="@+id/goldTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/skillsTitle"
+        android:layout_below="@+id/spinnerWeapon"
+        android:gravity="right|center"
+        android:text="@string/gold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/streg"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="30dp"
+        android:gravity="right|center"
+        android:text="@string/name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/gearTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_toLeftOf="@+id/supTitleMain"
+        android:gravity="right|center"
+        android:text="@string/GearMain"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinnerRace"
+        android:layout_alignLeft="@+id/supTitleMain"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/name"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/spinnerGear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Armor" />
+
+            <Spinner
+                android:id="@+id/spinnerGear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:entries="@array/Shield" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinnerGear3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/Misc" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/goldTitle"
+        android:layout_toRightOf="@+id/goldTitle"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/pp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberSigned" />
+
+        <EditText
+            android:id="@+id/gp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberSigned" />
+
+        <EditText
+            android:id="@+id/sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberSigned" />
+
+        <EditText
+            android:id="@+id/cp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberSigned" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/alignmentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/languageTitle"
+        android:layout_below="@+id/spinnerLanguage"
+        android:gravity="right|center"
+        android:text="@string/alignment"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/part1"
+        style="@style/btnStyleArsenic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/supTitleMain"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="48dp"
+        android:text="@string/savenpart2" />
+
+    <EditText
+        android:id="@+id/ClassLVL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinnerLanguage"
+        android:layout_toRightOf="@+id/spinnerClasses"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+</RelativeLayout>

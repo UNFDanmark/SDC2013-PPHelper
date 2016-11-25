@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">P&amp;P Helper</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_dice_roll">DiceRollActivity</string>
+
+    <string-array name="Races">
+        <item>Human</item>
+        <item>Half Orc</item>
+        <item>Elf</item>
+        <item>Half Elf</item>
+        <item>Gnome</item>
+        <item>Halfling</item>
+        <item>Dwarf</item>
+    </string-array>
+    <string-array name="Classes">
+        <item>Barbarian</item>
+        <item>Bard</item>
+        <item>Cleric</item>
+        <item>Druid</item>
+        <item>Fighter</item>
+        <item>Monk</item>
+        <item>Paladin</item>
+        <item>Ranger</item>
+        <item>Rogue</item>
+        <item>Sorcerer</item>
+        <item>Wizard</item>
+    </string-array>
+    <string-array name="Gear">
+        <item>Gauntlet</item>
+        <item>Unarmed Strike</item>
+        <item>Dagger</item>
+        <item>Dagger, Punching</item>
+        <item>Gauntlet, Spiked</item>
+        <item>Mace, Light</item>
+        <item>Sickle</item>
+        <item>Club</item>
+        <item>Mace, Heavy</item>
+        <item>Morningstar</item>
+        <item>Shortspear</item>
+        <item>Longspear</item>
+        <item>Quarterstaff</item>
+        <item>Spear</item>
+        <item>Crossbow, Heavy</item>
+        <item>Crossbow, Light</item>
+        <item>Dart</item>
+        <item>Javelin</item>
+        <item>Sling</item>
+        <item>Axe, Throwing</item>
+        <item>Hammer, Light</item>
+        <item>Handaxe</item>
+        <item>Kukri</item>
+        <item>Pick, Light</item>
+        <item>Sap</item>
+        <item>Shield, Light</item>
+        <item>Spiked Armor</item>
+        <item>Spiked Shield, Light</item>
+        <item>Sword, Sword</item>
+        <item>Battlexaxe</item>
+        <item>Flail</item>
+        <item>Longsword</item>
+        <item>Pick, Heavy</item>
+        <item>Rapier</item>
+        <item>Scimitar</item>
+        <item>Shield, Heavy</item>
+        <item>Spiked Shield, Heavy</item>
+        <item>Trident</item>
+        <item>Warhammer</item>
+        <item>Falchion</item>
+        <item>Glaive</item>
+        <item>Greataexe</item>
+        <item>Greatclub</item>
+        <item>Flail, Heavy</item>
+        <item>Greatsword</item>
+        <item>Guisearme</item>
+        <item>Halberd</item>
+        <item>Lance</item>
+        <item>Ranseur</item>
+        <item>Scythe</item>
+        <item>Longbow</item>
+        <item>Longbow, Composite</item>
+        <item>Shortbow</item>
+        <item>Shortbow, Composite</item>
+        <item>Kama</item>
+        <item>Nunchaku</item>
+        <item>Sai</item>
+        <item>Siangham</item>
+        <item>Sword, Bastard</item>
+        <item>Waraxe, Dwarven</item>
+        <item>Whip</item>
+        <item>Axe, Orc Double</item>
+        <item>Chain, Spiked</item>
+        <item>Flail, Dire</item>
+        <item>Hammer, Gnome Hooked</item>
+        <item>Sword, Two-Bladed</item>
+        <item>Urgrosh, dwarven</item>
+        <item>Bolas</item>
+        <item>Crossbow, Hand</item>
+        <item>Crossbow, Repeating Heavy</item>
+        <item>Crossbow, Repeating Light</item>
+        <item>Net</item>
+        
+    </string-array>
+
+    <string name="CC">Character creation</string>
+    <string name="Custom">- Customization</string>
+    <string name="dr">Dice Roller</string>
+    <string name="race">"Race: "</string>
+    <string name="classes">"Classes: "</string>
+    <string name="gear">"Gear: "</string>
+    <string name="addSpell">Add spell here...</string>
+    <string name="misc">Add Misc Modifier...</string>
+    <string name="tal">0</string>
+    <string name="spell">"Spells: "</string>
+    <string name="name">"Name: "</string>
+    <string name="whatname">What\'s your name...</string>
+    <string name="ascores">"Ability Score: "</string>
+    <string name="hp">Max Hit Points: </string>
+    <string name="chp">Current Hit Points: </string>
+    <string name="ac">AC: </string>
+    <string name="tac">Touch AC: </string>
+    <string name="ftac">Flat Foot AC: </string>
+    <string name="initiative">"Initiative: "</string>
+    <string name="weapon">"Weapon: "</string>
+    <string name="skills">"Skills: "</string>
+    <string name="Melee">"Melee</string>
+    <string name="Ranged">"Ranged</string>
+    <string name="Touch">"Touch</string>
+    <string name="Initiative">"Initiative</string>
+    <string name="Skills">"Skills</string>
+    <string name="Fortitude">"Fortitude</string>
+    <string name="Reflex">"Reflex</string>
+    <string name="Will">"Will</string>
+
+    <string-array name="Skills">
+        <item>Appraise</item>
+        <item>Balance</item>
+        <item>Bluff</item>
+        <item>Climb</item>
+        <item>Concentration</item>
+        <item>Craft</item>
+        <item>Decipher Script</item>
+        <item>Diplomacy</item>
+        <item>Disable Divice</item>
+        <item>Disguise</item>
+        <item>Escape Artist</item>
+        <item>Forgery</item>
+        <item>Gather Information</item>
+        <item>Handle Animal</item>
+        <item>Heal</item>
+        <item>Hide</item>
+        <item>Intimidate</item>
+        <item>Jump</item>
+        <item>Knowledge</item>
+        <item>Listen</item>
+        <item>Move Silently</item>
+        <item>Open Lock</item>
+        <item>Perform</item>
+        <item>Profession</item>
+        <item>Ride</item>
+        <item>Search</item>
+        <item>Sense Motive</item>
+        <item>Sleight Of Hand</item>
+        <item>Spellcraft</item>
+        <item>Spot</item>
+        <item>Survival</item>
+        <item>Swim</item>
+        <item>Tumble</item>
+        <item>Use Magic Device</item>
+        <item>Use Rope</item>
+    </string-array>
+    <string-array name="Language">
+        <item>Abyssal</item>
+        <item>Aquan</item>
+        <item>Celestial</item>
+        <item>Common</item>
+        <item>Draconic</item>
+        <item>Druidic</item>
+        <item>Dwarven</item>
+        <item>Elven</item>
+        <item>Giant</item>
+        <item>Gnome</item>
+        <item>Goblin</item>
+        <item>Gnoll</item>
+        <item>Dwarven</item>
+        <item>Halfing</item>
+        <item>Ignan</item>
+        <item>Infernal</item>
+        <item>Orc</item>
+        <item>Sylvan</item>
+        <item>Terran</item>
+        <item>Undercommon</item>
+    </string-array>
+    <string-array name="Alignment">
+        <item>Lawful Good</item>
+        <item>Neutral Good</item>
+        <item>Chaotic Good</item>
+        <item>Lawful Neutral</item>
+        <item>Neutral</item>
+        <item>Chaotic Neutral</item>
+        <item>Lawful Evil</item>
+        <item>Neutral Evil</item>
+        <item>Chaotic Evil</item>
+    </string-array>
+    <string-array name="Melee">
+        <item>Hail</item>
+        <item>To</item>
+        <item>Thee</item>
+        <item>Placeholder</item>
+        <item>Your</item>
+        <item>Ship</item>
+        <item>Has</item>
+        <item>Sailed</item>
+        <item>To</item>
+        <item>Sea</item>
+    </string-array>
+    <string-array name="Ranged">
+        <item>Hail</item>
+        <item>To</item>
+        <item>Thee</item>
+        <item>Placeholder</item>
+        <item>Your</item>
+        <item>Ship</item>
+        <item>Has</item>
+        <item>Sailed</item>
+        <item>To</item>
+        <item>Sea</item>
+    </string-array>
+    <string-array name="Touch">
+        <item>Hail</item>
+        <item>To</item>
+        <item>Thee</item>
+        <item>Placeholder</item>
+        <item>Your</item>
+        <item>Ship</item>
+        <item>Has</item>
+        <item>Sailed</item>
+        <item>To</item>
+        <item>Sea</item>
+    </string-array>
+    <string-array name="Initiative">
+        <item>Hail</item>
+        <item>To</item>
+        <item>Thee</item>
+        <item>Placeholder</item>
+        <item>Your</item>
+        <item>Ship</item>
+        <item>Has</item>
+        <item>Sailed</item>
+        <item>To</item>
+        <item>Sea</item>
+    </string-array>
+    <string-array name="Skeells">
+        <item>Hail</item>
+        <item>To</item>
+        <item>Thee</item>
+        <item>Placeholder</item>
+        <item>Your</item>
+        <item>Ship</item>
+        <item>Has</item>
+        <item>Sailed</item>
+        <item>To</item>
+        <item>Sea</item>
+    </string-array>
+    <string-array name="Fortitude">
+        <item>Hail</item>
+        <item>To</item>
+        <item>Thee</item>
+        <item>Placeholder</item>
+        <item>Your</item>
+        <item>Ship</item>
+        <item>Has</item>
+        <item>Sailed</item>
+        <item>To</item>
+        <item>Sea</item>
+    </string-array>
+    <string-array name="Reflex">
+        <item>Hail</item>
+        <item>To</item>
+        <item>Thee</item>
+        <item>Placeholder</item>
+        <item>Your</item>
+        <item>Ship</item>
+        <item>Has</item>
+        <item>Sailed</item>
+        <item>To</item>
+        <item>Sea</item>
+    </string-array>
+    <string-array name="Will">
+        <item>Hail</item>
+        <item>To</item>
+        <item>Thee</item>
+        <item>Placeholder</item>
+        <item>Your</item>
+        <item>Ship</item>
+        <item>Has</item>
+        <item>Sailed</item>
+        <item>To</item>
+        <item>Sea</item>
+    </string-array>
+    
+    <string name="language">"Language: "</string>
+    <string name="resultDiceType">resultDiceType</string>
+    <string name="resultDiceNumber">resultDiceNumber</string>
+    <string name="resultMiscNumber">resultMiscNumber</string>
+    <string name="alignment">"Alignment: "</string>
+    <string name="gold">Gold: </string>
+    <string name="armor">"Armor: "</string>
+    <string name="Subtitle">- Customization: Part 1</string>
+    <string name="subtitle">- Customization: Part 2</string>
+    <string name="ClassChoose">Class: </string>
+    <string name="MainTitle">MainTitle</string>
+    <string name="CCMain">Character creation</string>
+    <string name="GearMain">"Gear: "</string>
+    <string name="FeatsMain">"Feats: "</string>
+    <string name="part2">Part 2</string>
+    <string name="part1">Part 1</string>
+    <string name="AppNameMenu">P&amp;P Helper</string>
+    <string name="CreateCharMenu">Create character</string>
+    <string name="LoadCharMenu">Load character</string>
+    <string name="CharMenu">Characters</string>
+    <string name="SettingsMenu">Settings</string>
+    <string name="LoadCharInLoadCharActivity">Load character</string>
+    <string name="BackgroundStoryLoadChar">See background story</string>
+    <string name="DeleteCharLoadChar">Delete character</string>
+    <string-array name="Armor">
+        <item>Padded</item>
+        <item>Leather</item>
+        <item>Studded Leather</item>
+        <item>Chain Shirt</item>
+        <item>Hide</item>
+        <item>Scale Mail</item>
+        <item>Chainmail</item>
+        <item>Breastplate</item>
+        <item>Splint Mail</item>
+        <item>Banded Mail</item>
+        <item>Half-plate</item>
+        <item>Full Plate</item>
+        <item>Padded, spiked</item>
+        <item>Leather, spiked</item>
+        <item>Studded Leather, spiked</item>
+        <item>Chain Shirt, spiked</item>
+        <item>Hide, spiked</item>
+        <item>Scale Mail, spiked</item>
+        <item>Chainmail, spiked</item>
+        <item>Breastplate, spiked</item>
+        <item>Splint Mail, spiked</item>
+        <item>Banded Mail, spiked</item>
+        <item>Half-plate, spiked</item>
+        <item>Full Plate, spiked</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="Shield">
+        <item>Buckler</item>
+        <item>Shield, Light Wooden</item>
+        <item>Shield, Light Steel</item>
+        <item>Shield, Heavy Wooden</item>
+        <item>Shield, Heavy Steel</item>
+        <item>Shield, Tower</item>
+        <item>Buckler</item>
+        <item>Shield, Light Wooden, spiked</item>
+        <item>Shield, Light Steel, spiked</item>
+        <item>Shield, Heavy Wooden, spiked</item>
+        <item>Shield, Heavy Steel, spiked</item>
+        <item>Shield, Tower</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="Misc">
+        <item>Backpack, empty</item>
+        <item>Barrel, empty</item>
+        <item>Basket, empty</item>
+        <item>Bedroll</item>
+        <item>Bell</item>
+        <item>Blanket, Winter</item>
+        <item>Block And Tackle</item>
+        <item>Bottle, Wine Glass</item>
+        <item>Bucket, Empty</item>
+        <item>Caltrops</item>
+        <item>Candle</item>
+        <item>Canvas, Sq, Yd.</item>
+        <item>Case, Map Or Scroll</item>
+        <item>chain, 10Ft.</item>
+        <item>Chalk, 1 Piece</item>
+        <item>Chest, Empty</item>
+        <item>Crowbar</item>
+        <item>Firewood, Per Day</item>
+        <item>Fishhook</item>
+        <item>Fishing Net, 25 Sq. Ft.</item>
+        <item>Flask, Empty</item>
+        <item>Flint And Steel</item>
+        <item>Grappling Hook</item>
+        <item>Hammer</item>
+        <item>Ink, 1 Oz. Vial</item>
+        <item>Inkpen</item>
+        <item>Jug, Clay</item>
+        <item>Ladder, 10 Ft</item>
+        <item>Lamp, Common</item>
+        <item>Lantern, Bullseye</item>
+        <item>Lantern, Hooded</item>
+        <item>Lock, Very Simple</item>
+        <item>Lock, Average</item>
+        <item>Lock, Good</item>
+        <item>Lock, Amazing</item>
+        <item>Manacles</item>
+        <item>Manacles, Masterwork</item>
+        <item>Mirror, Small Steel</item>
+        <item>Mug/Tankard, Clay</item>
+        <item>Oil, 1-Pint Flask</item>
+        <item>Paper, Sheet</item>
+        <item>Parchment, Sheet</item>
+        <item>Pick, Mining</item>
+        <item>Pitcher, Clay</item>
+        <item>Piton</item>
+        <item>Pole, 10 Ft</item>
+        <item>Pot, Iron</item>
+        <item>Pouch, Belt, Empty</item>
+        <item>Ram, Portable</item>
+        <item>Rations, Trail, Per Day</item>
+        <item>Rope, Hempen, 50 Ft</item>
+        <item>Rope, Silk 50 Ft</item>
+        <item>Sack, Empty</item>
+        <item>Sealing Wax</item>
+        <item>Sewing Needle</item>
+        <item>Signal Whistle</item>
+        <item>Signet Ring</item>
+        <item>Sledge</item>
+        <item>Soap, Per Lb</item>
+        <item>Spyglass</item>
+        <item>Tent</item>
+        <item>Torch</item>
+        <item>Vial, Ink or Potion</item>
+        <item>Waterskin</item>
+        <item>Whetstone</item> 
+        <item>Acid, Flask</item>
+        <item>Alchemists Fire, Flask</item>
+        <item>Antitoxin, Vial</item>
+        <item>Everburning Torch</item>
+        <item>Holy Water, Flask</item>
+        <item>Smokestick</item>
+        <item>Sunrod</item>
+        <item>Tanglefoot Bag</item>
+        <item>Thunderstone</item>
+        <item>Tindertwig</item>
+        <item>Alchemist lab</item>
+        <item>Artisan Tool</item>
+        <item>Artisan Tool, Masterwork</item>
+        <item>Climber Kit</item>
+        <item>Diguise Kit</item>
+        <item>Healer Kit</item>
+        <item>Holly And Mistletoe</item>
+        <item>Holy Symbol, Wooden</item>
+        <item>Holy Symbol, Silver</item>
+        <item>Hourglass</item>
+        <item>Magnifying Glass</item>
+        <item>Musical Instrument, Common</item>
+        <item>Musical Instrument, Masterwork</item>
+        <item>Scale Merchant</item>
+        <item>Spell component Pouch</item>
+        <item>Spellbook, Vizard, Blank</item>
+        <item>Thieves Tools</item>
+        <item>Thieves Tools, Masterwork</item>
+        <item>Tool, Masterwork</item>
+        <item>Artisans Outfit</item>
+        <item>Clerics Vestment</item>
+        <item>Cold Weather Outfit</item>
+        <item>Entertainers Outfit</item>
+        <item>Explorers Outfit</item>
+        <item>Monks Outfit</item>
+        <item>Nobles Outfit</item>
+        <item>Peasants Outfit</item>
+        <item>Royal Outfit</item>
+        <item>Scolars Outfit</item>
+        <item>Travelers Outfit</item>
+        <item>Ale, Gallon</item>
+        <item>Ale, Mug</item>
+        <item>Banquet, Per Person</item>
+        <item>Bread, Per Loaf</item>
+        <item>Cheese, Hunk Of</item>
+        <item>Inn Stay, Good</item>
+        <item>Inn Stay, Common</item>
+        <item>Inn Stay, Poor</item>
+        <item>Meals, Per Day, Good</item>
+        <item>Meals, Per Day, Common</item>
+        <item>Meals, Per Day, Poor</item>
+        <item>Meat, Chunk Of</item>
+        <item>Wine, Common, Pitcher</item>
+        <item>Wine; Fine, Bottle</item>
+        <item>Barding, Medium Creature</item>
+        <item>Barding; Large Creature </item>
+        <item>Bit And Bridle</item>
+        <item>Dog, Guard</item>
+        <item>Dog; Riding</item>
+        <item>Donkey Or Mule</item>
+        <item>Feed, Per Day</item>
+        <item>Horse, Heavy</item>
+        <item>Horse, Light</item>
+        <item>Pony</item>
+        <item>Warhorse, Heavy</item>
+        <item>Warhorse, Light</item>
+        <item>Warpony</item>
+        <item>Saddle, Military</item>
+        <item>Saddle, Pack</item>
+        <item>Saddle, Riding</item>
+        <item>Saddle, Exotic, Military</item>
+        <item>Saddle, Exotic, Pack</item>
+        <item>Saddle, Exotic, Riding</item>
+        <item>Saddlebags</item>
+        <item>Stabling, Per Day</item>
+        <item>Carrige</item>
+        <item>Cart</item>
+        <item>Galley</item>
+        <item>Keelboat</item>
+        <item>Longship</item>
+        <item>Rowboat</item>
+        <item>Oar</item>
+        <item>Sailing Ship</item>
+        <item>Sled</item>
+        <item>Wagon</item>
+        <item>warship</item> 
+        
+        
+        
+        
+        
+        
+        
+        <item>None</item>
+    </string-array>
+        <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="DiceRollMenu">Dice roller</string>
+    <string name="save">save</string>
+    <string name="saveplusdiceroller">Save and move to Dice Roller</string>
+    <string name="deleteCharacter">delete Character</string>
+    <string name="loadCharacter">loadCharacter</string>
+    <string name="loadCharacter2">Load Character</string>
+    <string name="savenpart2">Save and move to part 2</string>
+    <string name="title_activity_load_character">Load Character</string>
+    <string name="actionBonus">&quot;                                                Action Bonus: &quot;</string>
+
+</resources>

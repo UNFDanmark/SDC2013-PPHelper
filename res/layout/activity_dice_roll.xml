@@ -1,0 +1,293 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/pandphelpurr"
+    tools:context=".DiceRollActivity" >
+
+    <TextView
+        android:id="@+id/terningType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/terningKast"
+        android:layout_alignBottom="@+id/terningKast"
+        android:layout_marginRight="26dp"
+        android:layout_toLeftOf="@+id/actionBonus"
+        android:text="Dice Type: 20"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/terningkastet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/down"
+        android:layout_toRightOf="@+id/terningType"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/down"
+        style="@style/btnStyleArsenic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/up"
+        android:layout_below="@+id/terningType"
+        android:text="Down" />
+
+    <TextView
+        android:id="@+id/AntalDice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/terningKast"
+        android:layout_alignBottom="@+id/terningKast"
+        android:layout_marginLeft="34dp"
+        android:layout_toRightOf="@+id/terningKast"
+        android:text="Throws: 1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/DiceUp"
+        style="@style/btnStyleArsenic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/up"
+        android:layout_toRightOf="@+id/terningKast"
+        android:text="Up" />
+
+    <Button
+        android:id="@+id/DiceDown"
+        style="@style/btnStyleArsenic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/down"
+        android:layout_alignBottom="@+id/down"
+        android:layout_alignLeft="@+id/DiceUp"
+        android:text="Down" />
+
+    <TextView
+        android:id="@+id/resultThrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/resultMiscMod"
+        android:layout_alignBottom="@+id/resultMiscMod"
+        android:layout_alignLeft="@+id/AntalDice"
+        android:text="Throws: 1    +"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/resultType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/resultThrows"
+        android:layout_alignBottom="@+id/resultThrows"
+        android:layout_alignRight="@+id/terningKast"
+        android:layout_marginRight="22dp"
+        android:text="Dice Type: D20          *"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/actionBonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:text="@string/actionBonus"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resultType"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="23dp" />
+
+    <TextView
+        android:id="@+id/resultMiscMod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/actionBonus"
+        android:layout_alignBottom="@+id/actionBonus"
+        android:layout_marginLeft="47dp"
+        android:layout_toRightOf="@+id/resultThrows"
+        android:text="Misc Mod: 0      +"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/miscMod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar1"
+        android:layout_marginBottom="63dp"
+        android:layout_toRightOf="@+id/TextView08"
+        android:ems="10"
+        android:hint="@string/misc"
+        android:inputType="numberSigned" >
+
+        <requestFocus />
+    </EditText>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/progressBar1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/resultMiscMod" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/meleeDice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/rangedDice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/touchDice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/initiativeDice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/skillDice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/fortDice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+
+        </TableRow>
+
+        <TableRow
+            
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/reffDice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/willDice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/TextView08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/miscMod"
+        android:layout_alignParentLeft="true"
+        android:text="Misc Mod:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/up"
+        style="@style/btnStyleArsenic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/miscMod"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="59dp"
+        android:text="Up" />
+
+    <Button
+        android:id="@+id/terningKast"
+        style="@style/btnStyleArsenic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DiceUp"
+        android:layout_toRightOf="@+id/down"
+        android:text="Dice Roll" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/actionBonus"
+        android:layout_alignBottom="@+id/actionBonus"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="122dp"
+        android:text="=                     Result: 20"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

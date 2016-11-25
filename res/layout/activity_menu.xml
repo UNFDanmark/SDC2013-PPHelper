@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pandphelpurr"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titleMain" />
+
+    <TextView
+        android:id="@+id/titleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:gravity="center"
+        android:text="@string/AppNameMenu"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="80sp" />
+
+    <Button
+        android:id="@+id/loadCharacter"
+        style="@style/btnStyleArsenic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/createCharacter"
+        android:layout_alignRight="@+id/createCharacter"
+        android:layout_below="@+id/createCharacter"
+        android:layout_marginTop="25dp"
+        android:text="@string/LoadCharMenu" />
+
+    <Button
+        android:id="@+id/settings"
+        style="@style/btnStyleArsenic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/diceRoller"
+        android:layout_alignRight="@+id/loadCharacter"
+        android:layout_below="@+id/diceRoller"
+        android:layout_marginTop="26dp"
+        android:text="@string/SettingsMenu" />
+
+    <Button
+        android:id="@+id/createCharacter"
+        style="@style/btnStyleArsenic"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:text="@string/CreateCharMenu" />
+
+    <Button
+        android:id="@+id/diceRoller"
+        style="@style/btnStyleArsenic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loadCharacter"
+        android:layout_alignRight="@+id/loadCharacter"
+        android:layout_below="@+id/loadCharacter"
+        android:layout_marginTop="23dp"
+        android:text="@string/DiceRollMenu" />
+
+</RelativeLayout>
